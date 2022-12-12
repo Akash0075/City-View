@@ -1,1 +1,135 @@
+void car()
+{
+      glPushMatrix();
+      glTranslatef(position, 0,0);
+      glBegin(GL_QUADS); //Car1
+      glColor3ub(255,255,0);
+      glVertex2f(-0.95f,0.06f);
+      glVertex2f( -0.95f,-0.04f);
+      glVertex2f( -0.82f,-0.04f);
+      glVertex2f( -0.82f, 0.06f);
+      glVertex2f( -0.95f, 0.06f);
+      glEnd();
 
+      glBegin(GL_QUADS); //Car1
+      glColor3ub(255,0,0);
+      glVertex2f( -0.85f, 0.09f);
+      glVertex2f( -0.85f,-0.04f);
+      glVertex2f( -0.78f, -0.04f);
+      glVertex2f( -0.78f, 0.09f);
+      glVertex2f( -0.85f, 0.09f);
+      glEnd();
+
+      glColor3ub(255,182,0);
+      Circle(-0.92, -0.06, 0.02, 1000);
+      Circle(-0.80, -0.06, 0.02, 1000);
+
+      glBegin(GL_QUADS); //Car2
+      glColor3ub(255,255,0);
+      glVertex2f(-0.55f,0.06f);
+      glVertex2f( -0.55f,-0.04f);
+      glVertex2f( -0.42f,-0.04f);
+      glVertex2f( -0.42f, 0.06f);
+      glVertex2f( -0.55f, 0.06f);
+      glEnd();
+
+      glBegin(GL_QUADS); //Car2
+      glColor3ub(255,0,0);
+      glVertex2f( -0.45f, 0.09f);
+      glVertex2f( -0.45f,-0.04f);
+      glVertex2f( -0.38f, -0.04f);
+      glVertex2f( -0.38f, 0.09f);
+      glVertex2f( -0.45f, 0.09f);
+      glEnd();
+
+      glColor3ub(255,182,0);
+      Circle(-0.52, -0.06, 0.02, 1000);
+      Circle(-0.4, -0.06, 0.02, 1000);
+      glPopMatrix();
+}
+
+void Car2()
+{
+      glPushMatrix();
+      glTranslatef(-position, 0,0);
+      glBegin(GL_QUADS); //Car1
+      glColor3ub(255,255,0);
+      glVertex2f(0.95f,0.2f);
+      glVertex2f( 0.95f, 0.13f);
+      glVertex2f( 0.82f, 0.13f);
+      glVertex2f( 0.82f, 0.2f);
+      glEnd();
+
+      glBegin(GL_QUADS); //Car1
+      glColor3ub(255,0,0);
+      glVertex2f( 0.85f, 0.23f);
+      glVertex2f( 0.85f,0.13f);
+      glVertex2f( 0.78f, 0.13f);
+      glVertex2f( 0.78f, 0.23f);
+      glEnd();
+
+      glColor3ub(255,182,0);
+      Circle(0.92, 0.12, 0.02, 1000);
+      Circle(0.81, 0.12, 0.02, 1000);
+
+      glBegin(GL_QUADS); //Car2
+      glColor3ub(255,255,0);
+      glVertex2f( 0.55f,0.2f);
+      glVertex2f( 0.55f,0.13f);
+      glVertex2f( 0.42f,0.13f);
+      glVertex2f( 0.42f, 0.2f);
+      glEnd();
+
+      glBegin(GL_QUADS); //Car2
+      glColor3ub(255,0,0);
+      glVertex2f( 0.45f, 0.23f);
+      glVertex2f( 0.45f,0.13f);
+      glVertex2f( 0.38f, 0.13f);
+      glVertex2f( 0.38f, 0.23f);
+      glEnd();
+
+      glColor3ub(255,182,0);
+      Circle(0.52, 0.12, 0.02, 1000);
+      Circle(0.42, 0.12, 0.02, 1000);
+      glPopMatrix();
+}
+
+void cloud ()
+{
+      glPushMatrix();
+      glTranslatef(position, 0,0);
+      glColor3ub(255,255,255);
+
+      Circle(0.83, 0.8, 0.07, 1000);
+      Circle(0.75, 0.8, 0.09, 1000);
+      Circle(0.68, 0.8, 0.07, 1000);
+
+
+      Circle(0.52, 0.9, 0.07, 1000);
+      Circle(0.6, 0.9, 0.09, 1000);
+      Circle(0.68, 0.9, 0.07, 1000);
+
+
+      Circle(-0.83, 0.8, 0.07, 1000);
+      Circle(-0.75, 0.8, 0.09, 1000);
+      Circle(-0.68, 0.8, 0.07, 1000);
+
+
+      Circle(-0.52, 0.9, 0.07, 1000);
+      Circle(-0.6,  0.9, 0.09, 1000);
+      Circle(-0.68, 0.9, 0.07, 1000);
+
+      Circle(-0.02, 0.9, 0.08, 1000);
+      Circle(-0.15, 0.9, 0.093, 1000);
+      Circle(-0.27, 0.9, 0.08, 1000);
+
+      glPopMatrix();
+}
+
+void hills ()
+{
+     glColor3ub(26, 255, 26);
+     Circle(0.2, 0.2, 0.3, 1000);
+     Circle(0.6, -0.15, 0.5, 1000);
+     Circle(0.9, 0.3, 0.2, 1000);
+}
